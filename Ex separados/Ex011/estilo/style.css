@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+/*
+#305261
+#615130
+#614230
+#E09700
+#E05100
+#019CE1
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --cor1:#305261;
+    --cor2:#615130;
+    --cor3:#614230;
+    --cor4:#E09700;
+    --cor5:#E05100;
+    --cor6:#019CE1;
+
+    --fonte-padrao: Arial, Verdana,Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue','cursive';
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: linear-gradient(to bottom, var(--cor3),var(--cor3),var(--cor6));
+}
+
+header{
+    background-color: var(--cor5);
+    min-height: 150px;
+    text-align: center;
+    padding: 40px;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow:2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color:white;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    padding: 50px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+nav{
+    background-color: var(--cor6);
+    padding: 10px;
+   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363);
+    
+}
+
+nav > a{
+    color: var(--cor3);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration:.5s ;
+}
+
+nav > a:hover{
+    background-color: var(--cor4);
+    color: var(--cor5);
+}
+
+main{
+
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1{
+    color:var(--cor4);
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2{
+    font-family: var(--fonte-destaque);
+    color: var(--cor4);
+    font-weight: normal;
+    text-indent: 8px;
+}
+
+main p{
+    margin: 15px 30px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong{
+    color: var(--cor3);
+    font-weight: bolder;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor2);
+    background-color: var(--cor5);
+    padding: 2px 6px;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem>p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.303);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url('../imagens/ODATA-Realidade-Aumentada-scaled.jpg');
+    background-position:right center;
+}
+
+div.video{
+    overflow:hidden;
+    position: relative;
+    width: 100%;
+    margin: -30px 0px -40px -15px;
+}
+
+div.video::after{
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+aside{
+    background-color: var(--cor4);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgb(0, 0, 0,0.281) ;
+
+}
+
+aside > h3{
+    background-color: var(--cor1);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside>ul{
+    list-style: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 1;
+    line-height: 1.5em;
+}
+
+body.table{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    border-collapse:collapse;
+    margin: 15px 0px 15px 0px;
+
+    overflow:hidden;
+    position: relative;
+    width: 100%;
+    
+}
+
+caption{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+th,td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th.cor,td.cor{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: rgb(118, 118, 118);
+}
+
+div#container{
+    overflow-x: auto;
+}
+
+
+
+footer{
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    
+}
+
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor4)
+}
+
+
